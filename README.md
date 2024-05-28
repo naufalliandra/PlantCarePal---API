@@ -1,1 +1,1 @@
-# PlantCarePal---API
+# PlantCarePal-API
