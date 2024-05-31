@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "plantcarepal-testing",
+  "private_key_id": "7b4c892f5d4e3a9ecfafe10508e034c6d85227a2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUcoPY+foaUWCC\ndhdL8uJZ98NKVg3jVpPxWg8nZCo//ksBqpGBo+KFKdNFt6jpytGxc/stfVWwG9Rd\nZd1/96sNUnHq1cbemqVlsXIQvp1Mc1XOZBwBIvYd3qFZUcQ7JNpiH9mIyTTaPLE7\n3gDRW/tDXbipiCw86DhK4DiMF8lPcPur7XPQQzBQQP1Wt53xAEzxKh/oQe69yCAk\noLFgfI0mv5QqrsJX89mOyy0ItRdAVAcwEEanzHl/HleJsrw3e7e4nDD7BQ9H1RxR\noOb0cyciCj7K6o/mA/XR5fIqOTwCSdh8qmqHe36oBpTeAVN27I4CG7AmOQa54bDm\nrcsYr78ZAgMBAAECggEAA+v97sZP7XwdbdBz8KUnXuV5152hZwDPqAUeF3+RX29j\nKhY11nCp5gRreojVQkT0vF5kP3w7VeNwTFhs5N0JGCyynqpbSqZh3EU7fP9P1Gai\nqbXjux+j7ybkz/XNoLvhmNh2rGrud1g8e1rx+pYZ8YNBkpuexBxorEqEW2MLBn+K\nVORMDOvlowWn5ENAD/71wGCEjhlbF0CEgGKinYSH7m4uoLY8m/yks9e3IgTgnh4z\n+GV1DB5lDX/L8svRwDtetlm233kkUkB2J97l3EwtYEpkDxtOcN/b9PtVHbeoWBCU\nYrdqNy9t2NK41jIGl3yQICniJz2NbsIG5O2d/jHUwQKBgQDzbXH1AjWB5gS/+F3s\noTc/si5+CAG+7y10RlOkQjeVkYnugsB6jA1RgjZTUimI020nOfrpU9EDROJQxnjU\nhZld1zONmvtFRd9RdZE8E0WhNHFx3NrkY0/OMX8JigOvg9WLxcz5uaOYsvPVpYPt\n/NqX6jZeZkS9FhovHzai9ekAqQKBgQDfa3SPXoQzLOpVcAYu4Qso0t6EOjMHBB2r\nE+mZcmJs7EI5lh1UILLKY3XbNxbvqALkoXWDXVcVVl+xJqgRXn0KxCcr4zoKvoqH\n9YwuGbO/CA+TKe/ifPZZvR5GLW3bRIcJZfhvFw+36pWfZHYJE2lmDVBbWfR/dh4f\n7Ic4Qdkg8QKBgDlk6KV3693AugX5LUwJhtlBzaxxftfh1LnBix8Dbc+aDQdrVK6Q\nLuO069IhYSGdl/LTvNEerf0zVJju8rZI+awifUk57Vyb6Ndv/NpJQPWNQ+IwzHtk\n3wAis20wWUYcs1DNRlLq7iOmrc8Fw2FtaKzA0CjZvANJHstVdLBfgpxhAoGBAKdd\nUbXMse+8J9bU0mzvvHJadMJM7sjEtozfn9CJNV4vJfUJlPLeg9DE7RbIj+/7xh8L\nLIK5u3CKgaitMp3AUJ9uDYH8+A/waMoskVQ/gL0MBs7RTZg20DytRS6A/ZiSHy5V\nKuPdPLMjke4TTbDCz+PY+WdVXajWDP8RKsJj4YmhAoGBALlXZWGJ5fgV6lZzc4re\ntOZ9rhg3eSp6rps/dzAqRj8VNz/fWW3pVOQ7JzP6XMxsYnWtTKEbq4JNFoj3RvYZ\nVDMkqNz/eBJsxl4pBg4crMUIlurSvU7CcBE8l/yrpi4eTbONF1pt7+kPwIj+5JEV\nPYNF9WgUl7hB2mWcR2wmJOAJ\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ifrj8@plantcarepal-testing.iam.gserviceaccount.com",
+  "client_id": "109498645277307297785",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ifrj8%40plantcarepal-testing.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
