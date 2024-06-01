@@ -1,5 +1,6 @@
 const db = require('../../config/db');
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
 
 const getAllQuestions = async (request, h) => {
     try {
@@ -8,10 +9,17 @@ const getAllQuestions = async (request, h) => {
         questionsSnapshot.forEach((doc) => {
             questions.push({ id: doc.id, ...doc.data() });
         });
-        return { status: 'success', data: questions };
+
+        return { 
+            status: 'success', 
+            data: questions,
+        };
     } catch (error) {
         console.error('Error getting questions:', error);
-        return h.response({ message: 'Internal Server Error' }).code(500);
+        return h.response({ 
+            status: 'error', 
+            message: 'Internal Server Error' 
+        }).code(500);
     }
 };
 
@@ -35,10 +43,15 @@ const getQuestionById = async (request, h) => {
             answers: answers
         };
 
-        return { status: 'success', data: questionWithAnswers };
+        return { 
+            status: 'success', 
+            data: questionWithAnswers,
+        };
     } catch (error) {
-        console.error('Error getting question by ID:', error);
-        return h.response({ message: 'Internal Server Error' }).code(500);
+        return h.response({ 
+            status: 'error', 
+            message: 'Internal Server Error' 
+        }).code(500);
     }
 };
 
@@ -50,11 +63,17 @@ const postQuestion = async (request, h) => {
 
         const userSnapshot = await db.collection('users').doc(userId).get();
         if (!userSnapshot.exists) {
-            return h.response({ message: 'User not found' }).code(404);
+            return h.response({ 
+                status: 'error', 
+                message: 'User not found',
+            }).code(404);
         }
+        
         const { title, question } = request.payload;
+
         const userData = userSnapshot.data();
         const username = userData.username;
+        
         const questionId = crypto.randomUUID();
         const createdAt = new Date().toISOString();
 
@@ -64,10 +83,17 @@ const postQuestion = async (request, h) => {
             question,
             createdAt
         });
-        return { status: 'success', message: 'Question posted successfully' };
+
+        return { 
+            status: 'success', 
+            message: 'Question posted successfully.' 
+        };
     } catch (error) {
-        console.error('Error posting question:', error);
-        return h.response({ message: 'Internal Server Error' }).code(500);
+        console.error('Error getting guide by ID:', error);
+        return h.response({ 
+            status: 'error', 
+            message: 'Internal Server Error' 
+        }).code(500);
     }
 };
 
@@ -79,7 +105,10 @@ const postAnswer = async (request, h) => {
 
         const userSnapshot = await db.collection('users').doc(userId).get();
         if (!userSnapshot.exists) {
-            return h.response({ message: 'User not found' }).code(404);
+            return h.response({ 
+                status: 'error', 
+                message: 'User not found',
+            }).code(404);
         }
 
         const userData = userSnapshot.data();
@@ -96,10 +125,15 @@ const postAnswer = async (request, h) => {
             createdAt
         });
 
-        return { status: 'success', message: 'Answer posted successfully' };
+        return { 
+            status: 'success', 
+            message: 'Answer posted successfully.',
+        };
     } catch (error) {
-        console.error('Error posting answer:', error);
-        return h.response({ message: 'Internal Server Error' }).code(500);
+        return h.response({ 
+            status: 'error', 
+            message: 'Internal Server Error' 
+        }).code(500);
     }
 };
 

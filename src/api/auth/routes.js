@@ -8,7 +8,7 @@ module.exports = [
         handler: AuthHandlers.register
     },
     {
-        method: 'PUT',
+        method: 'POST',
         path: '/login',
         options: { auth: false },
         handler: AuthHandlers.login
